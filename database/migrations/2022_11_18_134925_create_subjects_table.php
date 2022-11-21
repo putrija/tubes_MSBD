@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('subjects', function (Blueprint $table) {
-            $table->integer('subjects_id');
-            $table->varchar ('subjects_name');
+            $table->integer('subjects_id')->unsigned()->autoIncrement();
+            $table->string ('subjects_name');
             $desc_class=['10','11','12'];
             $table->enum('class',$desc_class);
             $table->timestamps();
