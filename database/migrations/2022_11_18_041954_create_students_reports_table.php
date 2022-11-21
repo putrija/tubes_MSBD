@@ -17,8 +17,8 @@ return new class extends Migration
             $table->increments('report_id');
             $table->integer('students_nis')->unsigned();
             $table->foreign('students_nis')->references('nis')->on('students')->onDelete('restrict');
-            $table->integer('subjects_id')->unsigned();
-            $table->foreign('subjects_id')->references('subjects_id')->on('subjects')->onDelete('restrict');
+            //$table->integer('subjects_id')->unsigned();
+            //$table->foreign('subjects_id')->references('subjects_id')->on('subjects')->onDelete('restrict');
             $table->integer('knowledge_score');
             $table->integer('skill_score');
             $desc_type=[
