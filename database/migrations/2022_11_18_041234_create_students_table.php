@@ -15,15 +15,15 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->timestamps();
-            $table->integer('nis')->unsigned()->autoIncrement();
-            $table->string('name');
-            $table->enum('gender', array('m','w'));
-            $table->enum('class', array('10','11','12'));
-            $table->enum('place_of_birth', array('Diambil dari API'));
-            $table->date('date_of_birth');
-            $table->string('phone_number');
-            $table->enum('religion', array('Christian', 'Chatolic', 'Muslim', 'Hindu', 'Buddha', 'Konghucu'));
-            $table->text('address');
+            $table->integer('nis')->primary();
+            $table->string('nama');
+            $table->enum('jenis_kelamin', array('m','w'));
+            $table->enum('kelas', array('10','11','12'));
+            $table->enum('tempat_lahir', array('Diambil dari API'));
+            $table->date('tanggal_lahir');
+            $table->string('nomor_telepon');
+            $table->enum('agama', array('Christian', 'Chatolic', 'Muslim', 'Hindu', 'Buddha', 'Konghucu'));
+            $table->text('alamat');
             $table->string('email');
         });
     }

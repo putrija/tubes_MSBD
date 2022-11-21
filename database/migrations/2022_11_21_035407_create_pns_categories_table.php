@@ -13,11 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('class_tbls', function (Blueprint $table) {
-            $table->id('id_kelas');
-            $table->string('nama_kelas');
-            $table->enum('jurusan', ['IPA', 'IPS']);
-            $table->timestamps();
+        Schema::create('pns_categories', function (Blueprint $table) {
+            $table->id()->autoIncrement();
+            $table->string('Jenis_PNS');
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('class_tbls');
+        Schema::dropIfExists('pns_categories');
     }
 };
