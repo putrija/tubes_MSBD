@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('classes', function (Blueprint $table) {
+        Schema::create('class_tbls', function (Blueprint $table) {
             $table->id('class_id');
             $table->string('class_name');
             $table->enum('major', ['Natural Science', 'Social Science']);
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('classes');
+        Schema::dropIfExists('class_tbls');
     }
 };
