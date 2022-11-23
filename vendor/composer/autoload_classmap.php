@@ -31,7 +31,6 @@ return array(
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\attendance' => $baseDir . '/app/Models/attendance.php',
     'App\\Models\\class_tbl' => $baseDir . '/app/Models/class_tbl.php',
-    'App\\Models\\course' => $baseDir . '/app/Models/course.php',
     'App\\Models\\pns_category' => $baseDir . '/app/Models/pns_category.php',
     'App\\Models\\ptk_category' => $baseDir . '/app/Models/ptk_category.php',
     'App\\Models\\re-registration' => $baseDir . '/app/Models/re-registration.php',

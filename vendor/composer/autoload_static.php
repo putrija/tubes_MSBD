@@ -540,7 +540,6 @@ class ComposerStaticInit6e136c6e4857370dac0b5beb7e4eed71
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\attendance' => __DIR__ . '/../..' . '/app/Models/attendance.php',
         'App\\Models\\class_tbl' => __DIR__ . '/../..' . '/app/Models/class_tbl.php',
-        'App\\Models\\course' => __DIR__ . '/../..' . '/app/Models/course.php',
         'App\\Models\\pns_category' => __DIR__ . '/../..' . '/app/Models/pns_category.php',
         'App\\Models\\ptk_category' => __DIR__ . '/../..' . '/app/Models/ptk_category.php',
         'App\\Models\\re-registration' => __DIR__ . '/../..' . '/app/Models/re-registration.php',
