@@ -18,7 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/siswa', function () {
-    return view('halaman_siswa.siswa');
+    return view('halaman_siswa.siswa', [
+        "titlenya" => "Halaman Siswa"
+    ]);
 });
 Route::get('/landing', function () {
     return view('landing.index');

@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('student_bios', function (Blueprint $table) {
-            $table->increments('id_bio_siswa')->primary();
+            $table->increments('id_bio_siswa');//->primary();
             $table->integer('nis');
             $table->string('anak_ke');
             $table->enum('status_keluarga', ['Anak Kandung', 'Anak Angkat']);
