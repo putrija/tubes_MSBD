@@ -12,7 +12,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
-          <a class="navbar-brand " href="#"><img src="logo.png" width="60"></a>
+          <a class="navbar-brand " href="#"><img src="/images/logo.png" width="60"></a>
           <a class="navbar-brand " href="#">SMA NEGERI 14 MEDAN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
