@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/siswa', function () {
     return view('halaman_siswa.siswa');
 });
+Route::get('/landing', function () {
+    return view('landing.index');
+});
 
 
 Auth::routes();
