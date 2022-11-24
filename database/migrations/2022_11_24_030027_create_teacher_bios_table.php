@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('teacher_bios', function (Blueprint $table) {
-            $table->increments('id_bio_guru')->primary();
+            $table->increments('id_bio_guru');//->primary();
             $table->string('nip', 20);
             $table->text('alamat_jalan');
             $table->string('rt');
