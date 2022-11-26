@@ -69,12 +69,12 @@ padding-bottom: 30px;
 </tr>
 </tbody></table>
 <br>
-<a href="http://localhost/siakad/admin/edit-siswa/1" class="btn btn-primary">Edit</a>
+<a href="{{ route('editguru') }}"><button class="btn btn-primary">Edit</button></a>
 <a href="http://localhost/siakad/admin/siswa" class="btn btn-default">Kembali</a>
 </div>
 <div class="col-md-6">
 
-  <img src="http://localhost/siakad/images/siswa/male.jpg" width="300px" class="img img-responsive" alt="">
+  <img src="/images/siswa/male.jpg" width="300px" class="img img-responsive" alt="">
 </div>
       </div> <!-- end of class panel-body -->
     </div> <!-- end of class panel -->
