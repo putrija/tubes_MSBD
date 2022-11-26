@@ -1,11 +1,12 @@
 @extends('layouts.navbar')
 @section('konten')
 
+<div class="container">
 <div class="row">
   <div class="panel panel-default">
     <div class="panel-heading">
 
-      Edit Siswa          </div>
+      Edit Guru          </div>
     <div class="panel-body">
       
 <style media="screen">
@@ -33,7 +34,7 @@ padding-bottom: 30px;
   <select name="jk" class="form-control">
     <option value="">-- Pilih Jenis Kelamin --</option>
         <option value="L" selected="">Laki-Laki</option>
-        <option value="P">Perempuan</option></select> <br><label for="foto">Foto</label><input type="file" name="foto" class="form-control"> <br> <br><input type="submit" name="submit" class="btn btn-primary" value="Simpan"> &nbsp; <input type="button" name="back" class="btn btn-default" id="back" value="Kembali">    </div>
+        <option value="P">Perempuan</option></select> <br><label for="foto">Foto</label><input type="file" name="foto" class="form-control"> <br> <br><input type="submit" name="submit" class="btn btn-primary" value="Simpan"> &nbsp; <a href="{{ route('guru') }}"><button class="btn btn-default">Kembali</button></a>   </div>
 </div>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -45,5 +46,6 @@ window.location='http://localhost/siakad/admin/siswa';
 
     </div> <!-- end of class panel-body -->
   </div> <!-- end of class panel -->
+</div>
 </div>
 @endsection
