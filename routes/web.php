@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Guru
+Route::get('/guru', [App\Http\Controllers\TeacherController::class, 'index'])->name('guru');
+Route::get('/guru/edit', [App\Http\Controllers\TeacherController::class, 'edit'])->name('editguru');
+
 Route::get('/siswa', function () {
     return view('halaman_siswa.siswa', [
         "titlenya" => "Halaman Siswa"
