@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Profil Guru</title>
-</head>
-<body>
+@extends('layouts.navbar')
+@section('konten')
+
   <div class="row">
     <div class="panel panel-default">
-      <div class="panel-heading">
-
-        Detail Siswa          </div>
+      <div class="panel-heading">Detail Guru</div>
       <div class="panel-body">
-        
-<style media="screen">
+        <style media="screen">
 .col-md-6{
 padding-bottom: 30px;
 }
@@ -24,30 +15,55 @@ padding-bottom: 30px;
 <tbody><tr>
   <td>Nama Lengkap</td>
   <td>:</td>
-  <td>A Imam Taufik</td>
+  <td>Jungkook BTS</td>
 </tr>
 <tr>
-  <td>NISN</td>
+  <td>NIP</td>
   <td>:</td>
   <td>9985856331</td>
 </tr>
 <tr>
-  <td>NIS</td>
-  <td>:</td>
-  <td>141510121</td>
-</tr>
-<tr>
-  <td>Kelas</td>
-  <td>:</td>
-  <td>12</td>
-</tr>
-<tr>
-  <td>Rombel</td>
-  <td>:</td>
-  <td>12 AK1</td>
-</tr>
-<tr>
   <td>Jenis Kelamin</td>
+  <td>:</td>
+  <td>L</td>
+</tr>
+<tr>
+  <td>Tempat Lahir</td>
+  <td>:</td>
+  <td>Medan</td>
+</tr>
+<tr>
+  <td>Tanggal Lahir</td>
+  <td>:</td>
+  <td>01 September 1997</td>
+</tr>
+<tr>
+  <td>Status Kepegawaian</td>
+  <td>:</td>
+  <td>PNS</td>
+</tr>
+<tr>
+  <td>Jenis PTK</td>
+  <td>:</td>
+  <td>Guru Mapel</td>
+</tr>
+<tr>
+  <td>Agama</td>
+  <td>:</td>
+  <td>Katolik</td>
+</tr>
+<tr>
+  <td>No Telepon</td>
+  <td>:</td>
+  <td>L</td>
+</tr>
+<tr>
+  <td>Email</td>
+  <td>:</td>
+  <td>L</td>
+</tr>
+<tr>
+  <td>Status Pernikahan</td>
   <td>:</td>
   <td>L</td>
 </tr>
@@ -63,5 +79,4 @@ padding-bottom: 30px;
       </div> <!-- end of class panel-body -->
     </div> <!-- end of class panel -->
   </div>
-</body>
-</html>
+  @endsection
