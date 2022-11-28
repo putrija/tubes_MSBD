@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 //Guru
-Route::get('/guru', [App\Http\Controllers\TeacherController::class, 'index'])->name('guru');
+Route::get('/guru', [App\Http\Controllers\TeacherController::class, 'index'],)->name('guru');
 Route::get('/guru/edit', [App\Http\Controllers\TeacherController::class, 'edit'])->name('edit_guru');
 
 //Nilai
