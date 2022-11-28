@@ -32,7 +32,7 @@ Route::get('/siswa', function () {
 });
 Route::get('/landing', function () {
     return view('landing.index', [
-        "titlenya" => "Halaman Siswa"
+        "titlenya" => "SMAN 14 MEDAN"
     ]);
 });
 
