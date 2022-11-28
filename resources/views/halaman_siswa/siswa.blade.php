@@ -92,7 +92,7 @@
   </tr>
   </tbody></table>
   <br>
-  <a href="{{ route('editguru') }}"><button class="btn btn-primary">Edit</button></a>
+  <a href="guru/edit"><button class="btn btn-primary">Edit</button></a>
   <a href="http://localhost/siakad/admin/siswa" class="btn btn-default">Kembali</a>
   </div>
         </div> <!-- end of class panel-body -->
