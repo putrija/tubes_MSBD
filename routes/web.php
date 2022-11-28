@@ -27,7 +27,9 @@ Route::get('/siswa', function () {
     ]);
 });
 Route::get('/landing', function () {
-    return view('landing.index');
+    return view('landing.index', [
+        "titlenya" => "Halaman Siswa"
+    ]);
 });
 
 
