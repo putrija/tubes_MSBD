@@ -1,0 +1,8 @@
+.navbar_siswa {
+    background: linear-gradient(to left,#6ECCAF, #ADE792);
+    height: 50px;
+}
+
+.nav-link:first-child {
+    /* margin-left: 50px; */
+}
