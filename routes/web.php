@@ -29,6 +29,13 @@ Route::get('/siswa', function () {
 Route::get('/landing', function () {
     return view('landing.index');
 });
+Route::get('/dashboard', function () {
+    return view('admin.index');
+});
+
+Route::get('/admin', function () {
+    return view('admin.dataguru');
+});
 
 
 Auth::routes();
