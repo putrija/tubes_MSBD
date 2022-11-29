@@ -17,8 +17,7 @@ return new class extends Migration
             //$table->integer('id')-> primary();
             $table->string('username')->unique();
             $table->string('password');
-            $table->enum('level_user', ['Admin', 'Guru', 'Siswa']);
-            $table->enum('status', ['Terdaftar', 'Belum Terdaftar']);
+            $table->enum('level_user', ['Admin', 'Guru', 'Siswa Terdaftar', 'Siswa Belum Terdaftar']);
             $table->timestamps();
         });
     }

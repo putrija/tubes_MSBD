@@ -1,6 +1,7 @@
 @extends('layouts.navbar')
 @section('konten')
 
+<div>
   <div class="row">
     <div class="panel panel-default">
       <div class="panel-heading">Detail Guru</div>
@@ -69,7 +70,7 @@ padding-bottom: 30px;
 </tr>
 </tbody></table>
 <br>
-<a href="{{ route('editguru') }}"><button class="btn btn-primary">Edit</button></a>
+<a href="{{ route('edit_guru') }}"><button class="btn btn-primary">Edit</button></a>
 <a href="http://localhost/siakad/admin/siswa" class="btn btn-default">Kembali</a>
 </div>
 <div class="col-md-6">
@@ -79,4 +80,5 @@ padding-bottom: 30px;
       </div> <!-- end of class panel-body -->
     </div> <!-- end of class panel -->
   </div>
+</div>
   @endsection
