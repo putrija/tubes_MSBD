@@ -9,8 +9,8 @@
                 <li class="menu-item-has-children active dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Management User</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-table"></i><a href="#">Data Guru</a></li>
-                        <li><i class="fa fa-table"></i><a href="#">Data Siswa</a></li>
+                        <li><i class="fa fa-table"></i><a href="/dataguru">Data Guru</a></li>
+                        <li><i class="fa fa-table"></i><a href="/datasiswa">Data Siswa</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
@@ -26,8 +26,8 @@
                 <li class="menu-item-has-children dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Berita</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Tambahkan Berita</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Dokumentasi Sekolah</a></li>
+                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="#">Tambahkan Berita</a></li>
+                        <li><i class="menu-icon ti-themify-logo"></i><a href="#">Dokumentasi Sekolah</a></li>
                     </ul>
                 </li>
                 {{-- <li>
