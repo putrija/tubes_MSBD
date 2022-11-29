@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 625px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    background-color:cornflowerblue;
+
+}
+
+.img-tengah{
+    display: block;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:100%;
+    height:650px;
+}
+/* untuk gambar dilogin */
+.img-flex{
+    display: inline-block;
+    border-radius: 10px;
+    /* margin-left:auto;
+    margin-right:auto; */
+    max-width:100%;
+    height:400px;
+    margin-top: 50px;
+    /* margin-top untuk menggeser gambarnya ke bawah */
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    background-color:beige;
+    border-radius: 20px;  
+    padding: 20px 20px;
+}
+
+.contentForm{
+    margin:8%;
+}
+
+.form-control{
+    border-color:aliceblue;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+.form-control:focus{
+    border-width: 0 0 3px 0;
+    color:black;
+    box-shadow: none;
+    transition: all 0.1s ease-in;
+}
+
+.btn{
+    border-radius:30px;
+}
