@@ -1,0 +1,28 @@
+.navbar_siswa {
+    background: linear-gradient(to left,#6ECCAF, #ADE792);
+    height: 50px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-link:first-child {
+    /* margin-left: 50px; */
+}
+
+.kontainer_panel_kiri {
+    padding-left: 30px;
+    /* background-color: #fdfacc; */
+}
+.kontainer_panel_kanan {
+    /* background-color: #92c5e7; */
+}
+
+.kontainer_navbar_siswa {
+    margin-bottom: 50px;
+}
+
+.kontainer_konten {
+    height: 100%;
+}

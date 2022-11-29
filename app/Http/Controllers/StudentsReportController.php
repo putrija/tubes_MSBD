@@ -5,19 +5,16 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class TeacherController extends Controller
+class StudentsReportController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-
     public function index()
     {
-        return view('halaman_guru.guru');
-        // ->with(array('titlenya' => 'Halaman Guru'));
+        return view('nilai.nilai');
     }
 
     /**
@@ -58,9 +55,11 @@ class TeacherController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    // public function edit($id)
     public function edit()
     {
-        return view('halaman_guru.edit')->with(array('titlenya' => 'Halaman Edit'));
+        return view('nilai.edit');
     }
 
     /**
