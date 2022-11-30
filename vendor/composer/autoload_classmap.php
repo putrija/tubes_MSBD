@@ -18,7 +18,10 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\StudentBioController' => $baseDir . '/app/Http/Controllers/StudentBioController.php',
     'App\\Http\\Controllers\\StudentsReportController' => $baseDir . '/app/Http/Controllers/StudentsReportController.php',
+<<<<<<< HEAD
     'App\\Http\\Controllers\\Teacher1Controller' => $baseDir . '/app/Http/Controllers/Teacher1Controller.php',
+=======
+>>>>>>> c7544e12433baca5f4dc8e6c8545c07d8352fbc2
     'App\\Http\\Controllers\\TeacherBioController' => $baseDir . '/app/Http/Controllers/TeacherBioController.php',
     'App\\Http\\Controllers\\TeacherController' => $baseDir . '/app/Http/Controllers/TeacherController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
