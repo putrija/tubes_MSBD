@@ -42,8 +42,8 @@ Route::get('/dashboard', function () {
 Route::get('/dataguru', function () {
     return view('admin.dataguru');
 });
-Route::get('/datasiswa', function () {
-    return view('admin.datasiswa');
+Route::get('/detailguru', function () {
+    return view('admin.detailguru');
 });
 
 
