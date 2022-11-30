@@ -37,6 +37,8 @@ return new class extends Migration
             $table->char('nik', 16);
             $table->char('no_kk', 16);
             $table->string('nuks', 255);
+
+            $table->foreign('id_guru')->references('id')->on('users');
         });
     }
 
