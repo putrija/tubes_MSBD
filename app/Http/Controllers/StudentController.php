@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Student;
 
-class StudentsReportController extends Controller
+class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,16 @@ class StudentsReportController extends Controller
      */
     public function index()
     {
-        return view('nilai.nilai',)->with(array(
-            'titlenya' => 'Halaman Nilai'
+        $dataku = Student::first();
+        // $data = Student::find(1);
+        // return view('halaman_siswa.siswa')->with(array(
+        //     'titlenya' => 'Halaman Siswa',
+        //     'dataku' => $dataku
+        // ));
+
+        // return dd(Student::get());
+        return view('halaman_siswa.siswa', compact('dataku'))->with(array(
+            'titlenya' => 'Halaman Siswa'
         ));
     }
 
@@ -57,13 +65,9 @@ class StudentsReportController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-    // public function edit($id)
-    public function edit()
+    public function edit($id)
     {
-        return view('nilai.edit')->with(array(
-            'titlenya' => 'Halaman Nilai'
-        ));
+        //
     }
 
     /**

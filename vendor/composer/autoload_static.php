@@ -527,10 +527,6 @@ class ComposerStaticInit6e136c6e4857370dac0b5beb7e4eed71
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\StudentBioController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudentBioController.php',
         'App\\Http\\Controllers\\StudentsReportController' => __DIR__ . '/../..' . '/app/Http/Controllers/StudentsReportController.php',
-<<<<<<< HEAD
-        'App\\Http\\Controllers\\Teacher1Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Teacher1Controller.php',
-=======
->>>>>>> c7544e12433baca5f4dc8e6c8545c07d8352fbc2
         'App\\Http\\Controllers\\TeacherBioController' => __DIR__ . '/../..' . '/app/Http/Controllers/TeacherBioController.php',
         'App\\Http\\Controllers\\TeacherController' => __DIR__ . '/../..' . '/app/Http/Controllers/TeacherController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -545,7 +541,6 @@ class ComposerStaticInit6e136c6e4857370dac0b5beb7e4eed71
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\Student' => __DIR__ . '/../..' . '/app/Models/Student.php',
         'App\\Models\\Teacher' => __DIR__ . '/../..' . '/app/Models/Teacher.php',
-        'App\\Models\\Teacher2' => __DIR__ . '/../..' . '/app/Models/Teacher2.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Models\\attendance' => __DIR__ . '/../..' . '/app/Models/attendance.php',
         'App\\Models\\class_tbl' => __DIR__ . '/../..' . '/app/Models/class_tbl.php',

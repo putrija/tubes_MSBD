@@ -18,10 +18,6 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\StudentBioController' => $baseDir . '/app/Http/Controllers/StudentBioController.php',
     'App\\Http\\Controllers\\StudentsReportController' => $baseDir . '/app/Http/Controllers/StudentsReportController.php',
-<<<<<<< HEAD
-    'App\\Http\\Controllers\\Teacher1Controller' => $baseDir . '/app/Http/Controllers/Teacher1Controller.php',
-=======
->>>>>>> c7544e12433baca5f4dc8e6c8545c07d8352fbc2
     'App\\Http\\Controllers\\TeacherBioController' => $baseDir . '/app/Http/Controllers/TeacherBioController.php',
     'App\\Http\\Controllers\\TeacherController' => $baseDir . '/app/Http/Controllers/TeacherController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
@@ -36,7 +32,6 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Models\\Student' => $baseDir . '/app/Models/Student.php',
     'App\\Models\\Teacher' => $baseDir . '/app/Models/Teacher.php',
-    'App\\Models\\Teacher2' => $baseDir . '/app/Models/Teacher2.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
     'App\\Models\\attendance' => $baseDir . '/app/Models/attendance.php',
     'App\\Models\\class_tbl' => $baseDir . '/app/Models/class_tbl.php',

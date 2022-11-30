@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->timestamps();
-            $table->integer('nis')->primary();
+            $table->char('nis')->primary();
             $table->string('nama');
             $table->enum('jenis_kelamin', array('m','w'));
             $table->enum('kelas', array('10','11','12'));
