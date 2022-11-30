@@ -39,8 +39,11 @@ Route::get('/dashboard', function () {
     return view('admin.index');
 });
 
-Route::get('/admin', function () {
+Route::get('/dataguru', function () {
     return view('admin.dataguru');
+});
+Route::get('/datasiswa', function () {
+    return view('admin.datasiswa');
 });
 
 
