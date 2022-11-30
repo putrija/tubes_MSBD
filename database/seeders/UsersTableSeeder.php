@@ -30,6 +30,7 @@ class UsersTableSeeder extends Seeder
                 'tgl_lahir' => null,
                 'kelas' => '1',
                 'level' => 'siswa',
+
             ],
         ];
         \DB::table('users')->insert($users);
