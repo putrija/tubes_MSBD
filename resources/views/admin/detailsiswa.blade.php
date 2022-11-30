@@ -109,6 +109,60 @@
                         </div>
                     </div>
                     <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Diterima Di Kelas</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 10</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Diterima Pada Tanggal</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 2019-06-14</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Diterima Semester</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 1</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Sekolah Asal</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: SMP Permata Hati</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Alamat Sekolah Asal</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: jl. Gunadharma</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Tahun Ijazah SMP</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 2019</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Nomor Ijazah SMP</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 31442</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Tahun SKHUN SMP</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 2019</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col col-md-3"><label class=" form-control-label">Nomor SKHUN SMP</label></div>
+                        <div class="col-12 col-md-9">
+                            <p class="form-control-static">: 54241</p>
+                        </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col col-md-3"><label class=" form-control-label">Nama Ayah</label></div>
                         <div class="col-12 col-md-9">
                             <p class="form-control-static">: Simar Ginting</p>
@@ -180,13 +234,8 @@
                             <p class="form-control-static">: -</p>
                         </div>
                     </div>
-    
-                <button type="submit" class="btn btn-primary">
-                    <i class="fa fa-dot-circle-o"></i> Submit
-                </button>
-                <button type="reset" class="btn btn-success">
-                    <i class="fa fa-ban"></i> Reset
-                </button>
+                    <button type="submit" class="btn btn-success"><i class="fa fa-edit"></i> Edit</button>
+                    <button type="reset" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</button>
             </div>
             </div>
         </div>
