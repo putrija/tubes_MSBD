@@ -16,7 +16,7 @@ class TeacherController extends Controller
 
     public function index()
     {
-        return view('halaman_guru.guru');
+        return view('halaman_guru.tryguru');
         // ->with(array('titlenya' => 'Halaman Guru'));
     }
 
