@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            //$table->integer('id')-> primary();
+            $table->integer('id')->primary();
             $table->string('username')->unique();
             $table->string('password');
             $table->enum('level_user', ['Admin', 'Guru', 'Siswa Terdaftar', 'Siswa Belum Terdaftar', 'Super Admin']);
