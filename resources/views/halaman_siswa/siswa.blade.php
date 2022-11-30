@@ -1,57 +1,40 @@
 @extends('layouts.navbar')
 @section('link_css')
 <link rel="stylesheet" href="css_siswa/untuk_siswa.css">
-@stop
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@endsection
 @section('konten')
-<div class="row kontainer_navbar_siswa">
-<nav class="navbar navbar-expand-lg navbar_siswa justify-content-start">
-    <div class="container" style="margin-left: 20px; padding:0px;">
-      <button class="navbar-toggler" type="button" style="margin-top:-2px" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="margin-top:-2px"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" style="" id="navbarScroll">
-        <ul class="navbar-nav navbar-nav-scroll justify-content-between" style="--bs-scroll-height: 100px;width:100%;">
-          <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Master Data</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Nilai</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Kelas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Mata Pelajaran</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Absensi Harian</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rekap Absensi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pesan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Pengumuman</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Peraturan</a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar_siswa navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ekstrakurikuler
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Daftar</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Nilai</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </nav>
-</div><!-- End Kontainer Navbar Siswa-->
+  </div>
+</nav>
+<h2 class="detail_mahasiswa">Detail Siswa</h2>
 
-<div class="row kontainer_konten">
+<div class="row kontainer_konten" style="z-index: 1">
   <div class="kontainer_panel_kiri col-md-6 col-sm-12">
     <div class="row">
       <div class="panel panel-default">
-        <div class="panel-heading"><h2>Detail Siswa</h2></div>
+        <div class="panel-heading"></div>
         <div class="panel-body">
           <style media="screen">
   .col-md-6{
@@ -61,6 +44,9 @@
   <div class="col-md-6">
   <table class="table">
   <tbody><tr>
+    {{-- @foreach ($dataku as $data)
+        {{ $data->nis }}
+    @endforeach --}}
     <td>Nama Lengkap</td>
     <td>:</td>
     <td>Rizky Billar</td>
@@ -68,7 +54,7 @@
   <tr>
     <td>NISN</td>
     <td>:</td>
-    <td>998585102</td>
+    <td>{{ $dataku->nis }}</td>
   </tr>
   <tr>
     <td>NIS</td>
@@ -93,21 +79,26 @@
   </tbody></table>
   <br>
   <a href="guru/edit"><button class="btn btn-primary">Edit</button></a>
-  <a href="http://localhost/siakad/admin/siswa" class="btn btn-default">Kembali</a>
+  <a href="/landing" class="btn btn-default">Kembali</a>
   </div>
         </div> <!-- end of class panel-body -->
       </div> <!-- end of class panel -->
     </div>
   </div> <!-- end of Kontainer Panel Kanan -->
 
-  <div class="kontainer_panel_kanan d-flex align-items-center justify-content-center col-md-6 col-sm-12">
+  <div class="kontainer_panel_kanan d-flex align-items-center justify-content-center col-md-6 col-sm-12 order-first">
     <div class="col-md-6">
-      <img src="/images/siswa/male.jpg" width="300px" class="img img-responsive" alt="">
+      <img src="/images/almetusu.jpg" width="300px" class="img img-responsive" alt="">
     </div>
   </div> <!-- end of Kontainer Panel Kanan -->
 </div> <!-- end of Kontainer Konten -->
 
-<div class="kontainer_footer d-flex align-items-center justify-content-center" style="position: fixed; bottom:0px; background-color:#506d25; width:100%; height:40px; color:whitesmoke;">
-  <p style="padding: 0px; margin:0px;">@Copyright SMAN 14 Medan</p>
+<div class="kontainer_footer d-flex align-items-center justify-content-center" style="position: fixed; bottom:0px; background-color:#5f9446; width:100%; height:40px; color:whitesmoke;">
+  <p style="padding: 0px; margin:0px;">Copyright © SMAN 14 Medan 2022</p>
 </div>
-@stop
+@endsection
+
+@section('link_js')
+{{-- <script src="js_siswa/untuk_siswa.js"></script> --}}
+{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> --}}
+@endsection

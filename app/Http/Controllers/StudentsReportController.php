@@ -14,7 +14,9 @@ class StudentsReportController extends Controller
      */
     public function index()
     {
-        return view('nilai.nilai');
+        return view('nilai.nilai',)->with(array(
+            'titlenya' => 'Halaman Nilai'
+        ));
     }
 
     /**
@@ -59,7 +61,9 @@ class StudentsReportController extends Controller
     // public function edit($id)
     public function edit()
     {
-        return view('nilai.edit');
+        return view('nilai.edit')->with(array(
+            'titlenya' => 'Halaman Nilai'
+        ));
     }
 
     /**

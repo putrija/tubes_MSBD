@@ -2,22 +2,29 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Student;
 
-class TeacherController extends Controller
+class StudentController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-
     public function index()
     {
-        return view('halaman_guru.tryguru');
-        // ->with(array('titlenya' => 'Halaman Guru'));
+        $dataku = Student::first();
+        // $data = Student::find(1);
+        // return view('halaman_siswa.siswa')->with(array(
+        //     'titlenya' => 'Halaman Siswa',
+        //     'dataku' => $dataku
+        // ));
+
+        // return dd(Student::get());
+        return view('halaman_siswa.siswa', compact('dataku'))->with(array(
+            'titlenya' => 'Halaman Siswa'
+        ));
     }
 
     /**
@@ -58,9 +65,9 @@ class TeacherController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit()
+    public function edit($id)
     {
-        return view('halaman_guru.edit')->with(array('titlenya' => 'Halaman Edit'));
+        //
     }
 
     /**

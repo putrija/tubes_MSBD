@@ -25,11 +25,15 @@ Route::get('/guru/edit', [App\Http\Controllers\TeacherController::class, 'edit']
 Route::get('/nilai', [App\Http\Controllers\StudentsReportController::class, 'index'])->name('nilai');
 Route::get('/nilai/edit', [App\Http\Controllers\StudentsReportController::class, 'edit'])->name('edit_nilai');
 
-Route::get('/siswa', function () {
-    return view('halaman_siswa.siswa', [
-        "titlenya" => "Halaman Siswa"
-    ]);
-});
+
+// Route::get('/siswa', function () {
+//     return view('halaman_siswa.siswa', [
+//         "titlenya" => "Halaman Siswa"
+//     ]);
+// });
+
+Route::get('/siswa', [App\Http\Controllers\StudentController::class, 'index'])->name('siswa');
+
 Route::get('/landing', function () {
     return view('landing.index', [
         "titlenya" => "SMAN 14 MEDAN"
@@ -46,6 +50,10 @@ Route::get('/detailguru', function () {
     return view('admin.detailguru');
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
