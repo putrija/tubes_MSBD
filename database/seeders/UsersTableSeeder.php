@@ -16,21 +16,14 @@ class UsersTableSeeder extends Seeder
     {
         $users = [
             [
-                'name' => 'admin',
-                'email' => 'admin@gmail.com',
-                'password' => bcrypt('admin'),
-                'tgl_lahir' => null,
-                'kelas' => null,
-                'level' => 'admin',
+                'username' => 'admin',
+                'password' => bcrypt('dmin'),
+                'level_user' => 'Admin',
             ],
             [
-                'name' => 'siswa',
-                'email' => 'siswa@gmail.com',
-                'password' => bcrypt('siswa'),
-                'tgl_lahir' => null,
-                'kelas' => '1',
-                'level' => 'siswa',
-
+                'username' => 'guru',
+                'password' => bcrypt('guru'),
+                'level_user' => 'Guru',
             ],
         ];
         \DB::table('users')->insert($users);
